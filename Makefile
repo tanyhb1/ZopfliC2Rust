@@ -22,7 +22,7 @@ ZOPFLIPNGBIN_OBJ := $(patsubst %.cc,obj/%.o,$(ZOPFLIPNGBIN_SRC))
 
 .PHONY: all libzopfli libzopflipng
 
-all: zopfli libzopfli libzopfli.a zopflipng libzopflipng libzopflipng.a
+all: zopfli libzopfli libzopfli.a 
 
 obj/%.o: %.c
 	@mkdir -p `dirname $@`

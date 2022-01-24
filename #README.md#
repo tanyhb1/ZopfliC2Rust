@@ -43,4 +43,5 @@ Alakuijala, based on an algorithm by Jyrki Alakuijala.
 
 ### Translation into unsafe Rust via C2Rust
 + Run ```intercept-build sh -c "make"``` in the directory with the project's `Makefile`. This will produce a resulting `compile_commands.json` that includes the compilation parameters, etc.
-+ To translate into unsafe Rust, run `c2rust transpile compile_commands.json -b src/zopfli/zopfli_bin --output-dir rust`. Resulting Rust code and build files (Cargo.toml) will be found in the `rust/` directory.
++ To translate into unsafe Rust, run `c2rust transpile compile_commands.json`. 
++c2rust refactor --cargo --rewrite-mode inplace rename_unnamed ; reorganize_definitions
