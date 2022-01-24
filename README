@@ -37,3 +37,10 @@ please use the build instructions above instead.
 
 Zopfli Compression Algorithm was created by Lode Vandevenne and Jyrki
 Alakuijala, based on an algorithm by Jyrki Alakuijala.
+
+
+# Translation into Safe Rust (possibly more idiomatic Rust too)
+
+### Translation into unsafe Rust via C2Rust
++ Run ```intercept-build sh -c "make"``` in the directory with the project's `Makefile`. This will produce a resulting `compile_commands.json` that includes the compilation parameters, etc.
++ To translate into unsafe Rust, run `c2rust transpile compile_commands.json`. 
