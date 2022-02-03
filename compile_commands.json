@@ -12,63 +12,6 @@
             "-Wno-unused-function",
             "-fPIC",
             "-o",
-            "obj/src/zopfli/deflate.o",
-            "src/zopfli/deflate.c"
-        ],
-        "directory": "/home/tanyhb1/ZopfliC2Rust",
-        "file": "src/zopfli/deflate.c"
-    },
-    {
-        "arguments": [
-            "cc",
-            "-c",
-            "-W",
-            "-Wall",
-            "-Wextra",
-            "-ansi",
-            "-pedantic",
-            "-O3",
-            "-Wno-unused-function",
-            "-fPIC",
-            "-o",
-            "obj/src/zopfli/tree.o",
-            "src/zopfli/tree.c"
-        ],
-        "directory": "/home/tanyhb1/ZopfliC2Rust",
-        "file": "src/zopfli/tree.c"
-    },
-    {
-        "arguments": [
-            "cc",
-            "-c",
-            "-W",
-            "-Wall",
-            "-Wextra",
-            "-ansi",
-            "-pedantic",
-            "-O3",
-            "-Wno-unused-function",
-            "-fPIC",
-            "-o",
-            "obj/src/zopfli/gzip_container.o",
-            "src/zopfli/gzip_container.c"
-        ],
-        "directory": "/home/tanyhb1/ZopfliC2Rust",
-        "file": "src/zopfli/gzip_container.c"
-    },
-    {
-        "arguments": [
-            "cc",
-            "-c",
-            "-W",
-            "-Wall",
-            "-Wextra",
-            "-ansi",
-            "-pedantic",
-            "-O3",
-            "-Wno-unused-function",
-            "-fPIC",
-            "-o",
             "obj/src/zopfli/zopfli_lib.o",
             "src/zopfli/zopfli_lib.c"
         ],
@@ -88,49 +31,11 @@
             "-Wno-unused-function",
             "-fPIC",
             "-o",
-            "obj/src/zopfli/blocksplitter.o",
-            "src/zopfli/blocksplitter.c"
+            "obj/src/zopfli/zlib_container.o",
+            "src/zopfli/zlib_container.c"
         ],
         "directory": "/home/tanyhb1/ZopfliC2Rust",
-        "file": "src/zopfli/blocksplitter.c"
-    },
-    {
-        "arguments": [
-            "cc",
-            "-c",
-            "-W",
-            "-Wall",
-            "-Wextra",
-            "-ansi",
-            "-pedantic",
-            "-O3",
-            "-Wno-unused-function",
-            "-fPIC",
-            "-o",
-            "obj/src/zopfli/katajainen.o",
-            "src/zopfli/katajainen.c"
-        ],
-        "directory": "/home/tanyhb1/ZopfliC2Rust",
-        "file": "src/zopfli/katajainen.c"
-    },
-    {
-        "arguments": [
-            "cc",
-            "-c",
-            "-W",
-            "-Wall",
-            "-Wextra",
-            "-ansi",
-            "-pedantic",
-            "-O3",
-            "-Wno-unused-function",
-            "-fPIC",
-            "-o",
-            "obj/src/zopfli/squeeze.o",
-            "src/zopfli/squeeze.c"
-        ],
-        "directory": "/home/tanyhb1/ZopfliC2Rust",
-        "file": "src/zopfli/squeeze.c"
+        "file": "src/zopfli/zlib_container.c"
     },
     {
         "arguments": [
@@ -164,6 +69,44 @@
             "-Wno-unused-function",
             "-fPIC",
             "-o",
+            "obj/src/zopfli/katajainen.o",
+            "src/zopfli/katajainen.c"
+        ],
+        "directory": "/home/tanyhb1/ZopfliC2Rust",
+        "file": "src/zopfli/katajainen.c"
+    },
+    {
+        "arguments": [
+            "cc",
+            "-c",
+            "-W",
+            "-Wall",
+            "-Wextra",
+            "-ansi",
+            "-pedantic",
+            "-O3",
+            "-Wno-unused-function",
+            "-fPIC",
+            "-o",
+            "obj/src/zopfli/tree.o",
+            "src/zopfli/tree.c"
+        ],
+        "directory": "/home/tanyhb1/ZopfliC2Rust",
+        "file": "src/zopfli/tree.c"
+    },
+    {
+        "arguments": [
+            "cc",
+            "-c",
+            "-W",
+            "-Wall",
+            "-Wextra",
+            "-ansi",
+            "-pedantic",
+            "-O3",
+            "-Wno-unused-function",
+            "-fPIC",
+            "-o",
             "obj/src/zopfli/util.o",
             "src/zopfli/util.c"
         ],
@@ -183,11 +126,11 @@
             "-Wno-unused-function",
             "-fPIC",
             "-o",
-            "obj/src/zopfli/hash.o",
-            "src/zopfli/hash.c"
+            "obj/src/zopfli/blocksplitter.o",
+            "src/zopfli/blocksplitter.c"
         ],
         "directory": "/home/tanyhb1/ZopfliC2Rust",
-        "file": "src/zopfli/hash.c"
+        "file": "src/zopfli/blocksplitter.c"
     },
     {
         "arguments": [
@@ -202,11 +145,30 @@
             "-Wno-unused-function",
             "-fPIC",
             "-o",
-            "obj/src/zopfli/zlib_container.o",
-            "src/zopfli/zlib_container.c"
+            "obj/src/zopfli/gzip_container.o",
+            "src/zopfli/gzip_container.c"
         ],
         "directory": "/home/tanyhb1/ZopfliC2Rust",
-        "file": "src/zopfli/zlib_container.c"
+        "file": "src/zopfli/gzip_container.c"
+    },
+    {
+        "arguments": [
+            "cc",
+            "-c",
+            "-W",
+            "-Wall",
+            "-Wextra",
+            "-ansi",
+            "-pedantic",
+            "-O3",
+            "-Wno-unused-function",
+            "-fPIC",
+            "-o",
+            "obj/src/zopfli/hash.o",
+            "src/zopfli/hash.c"
+        ],
+        "directory": "/home/tanyhb1/ZopfliC2Rust",
+        "file": "src/zopfli/hash.c"
     },
     {
         "arguments": [
@@ -245,5 +207,43 @@
         ],
         "directory": "/home/tanyhb1/ZopfliC2Rust",
         "file": "src/zopfli/cache.c"
+    },
+    {
+        "arguments": [
+            "cc",
+            "-c",
+            "-W",
+            "-Wall",
+            "-Wextra",
+            "-ansi",
+            "-pedantic",
+            "-O3",
+            "-Wno-unused-function",
+            "-fPIC",
+            "-o",
+            "obj/src/zopfli/squeeze.o",
+            "src/zopfli/squeeze.c"
+        ],
+        "directory": "/home/tanyhb1/ZopfliC2Rust",
+        "file": "src/zopfli/squeeze.c"
+    },
+    {
+        "arguments": [
+            "cc",
+            "-c",
+            "-W",
+            "-Wall",
+            "-Wextra",
+            "-ansi",
+            "-pedantic",
+            "-O3",
+            "-Wno-unused-function",
+            "-fPIC",
+            "-o",
+            "obj/src/zopfli/deflate.o",
+            "src/zopfli/deflate.c"
+        ],
+        "directory": "/home/tanyhb1/ZopfliC2Rust",
+        "file": "src/zopfli/deflate.c"
     }
 ]

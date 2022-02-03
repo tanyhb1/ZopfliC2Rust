@@ -44,3 +44,4 @@ Alakuijala, based on an algorithm by Jyrki Alakuijala.
 ### Translation into unsafe Rust via C2Rust
 + Run ```intercept-build sh -c "make"``` in the directory with the project's `Makefile`. This will produce a resulting `compile_commands.json` that includes the compilation parameters, etc.
 + To translate into unsafe Rust, run `c2rust transpile compile_commands.json -b src/zopfli/zopfli_bin --output-dir rust`. Resulting Rust code and build files (Cargo.toml) will be found in the `rust/` directory.
++ To compile a binary, first navigate to the `Cargo.toml` file, and remove the `autobins` option. Then, rename `zopfli_bin.rs` to `main.rs`, and include the library via by adding `use rust::src::*;` .Running `cargo build` will then compile the binary.
