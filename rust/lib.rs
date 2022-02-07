@@ -5,11 +5,9 @@
 #![allow(non_upper_case_globals)]
 #![allow(unused_assignments)]
 #![allow(unused_mut)]
-#![feature(const_raw_ptr_to_usize_cast)]
+#![feature(rustc_private)]
 #![feature(extern_types)]
 #![feature(linkage)]
-#![feature(main)]
-#![feature(ptr_wrapping_offset_from)]
 #![feature(register_tool)]
 #![register_tool(c2rust)]
 
@@ -27,5 +25,6 @@ pub mod src {
     pub mod tree;
     pub mod util;
     pub mod zlib_container;
+    pub mod zopfli_bin;
     pub mod zopfli_lib;
 } // mod src
